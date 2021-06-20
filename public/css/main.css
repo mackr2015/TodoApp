@@ -1,0 +1,43 @@
+
+body {
+  font-size: 17px;
+}
+
+@media (min-width: 992px){
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+
+  }
+  .navbar-nav li {
+    margin: 0 15px;
+  }
+
+}
+
+.todo_form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.todo_form form {
+  justify-content: center;
+  width: 100%;
+}
+.results .bg-white {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.results .result_title {
+  display: inline-block;
+  font-weight: bold;
+}
+.results .result_title form {
+  float: right;
+}
+.results .bg-white form .btn {
+  color: red;
+}
+  
