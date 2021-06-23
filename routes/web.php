@@ -29,3 +29,7 @@ Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
 Route::post('/todo', [TodoController::class, 'saveTodo']);
 
 Route::delete('/todo/{todo}', [TodoController::class, 'deleteTodo'])->name('todo.delete');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
